@@ -13,8 +13,9 @@ namespace TriangularNumbers
                 Console.WriteLine($"Triangular Number {i}: {TriangularNums(i)}");
             }
         }
+
         //Method to determine triangular nums
-        public static int TriangularNums(int n)
+        static int TriangularNums(int n)
         {
             //if n is equal to 1 return 1
             if (n == 1)
@@ -22,14 +23,8 @@ namespace TriangularNumbers
                 return 1;
             }
             //else return the current value of n plus a recursive call to the method with n-1 as the param
-            else
-            {
-                return n += TriangularNums(n - 1);
-            }
+
+            return n += TriangularNums(n - 1);
         }
-
     }
-    
 }
-
-

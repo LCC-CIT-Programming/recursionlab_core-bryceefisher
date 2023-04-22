@@ -13,7 +13,8 @@ namespace FibonacciNumbers
                 Console.WriteLine($"Fib Number {i + 1}: {FibNums(i)}");
             }
         }
-       // method to determine the first 10 numbers in the fibonacci sequence
+
+        // method to determine the first 10 numbers in the fibonacci sequence
         public static int FibNums(int n)
         {
             //if n is equal to 0 return 0
@@ -21,19 +22,15 @@ namespace FibonacciNumbers
             {
                 return 0;
             }
+
             // else if n is equal to 1 return 1
-            else if (n == 1)
+            if (n == 1)
             {
                 return 1;
             }
             //else return the current value of n by calling the method on n-1 and n-2
-            else
-            {
-                return n = FibNums(n-1) + FibNums(n-2);
-            }
+
+            return n = FibNums(n - 1) + FibNums(n - 2);
         }
-
     }
-    
 }
-
