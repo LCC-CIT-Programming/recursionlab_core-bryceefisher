@@ -10,7 +10,7 @@ namespace FibonacciNumbers
             for (int i = 0; i < 10; i++)
             {
                 //display the 10 numbers to the console
-                Console.WriteLine($"Fib Number {i}: {FibNums(i)}");
+                Console.WriteLine($"Fib Number {i + 1}: {FibNums(i)}");
             }
         }
        // method to determine the first 10 numbers in the fibonacci sequence
